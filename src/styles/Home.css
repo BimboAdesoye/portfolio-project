@@ -1,6 +1,9 @@
 .home {
-  text-align: center;
+  /* text-align: center; */
   /* padding: 1rem 0; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile {
@@ -33,7 +36,7 @@
   font-style: normal;
   font-weight: 300;
   line-height: 28px;
-  max-width: 572px;
+  max-width: 800px;
   margin: auto;
   text-align: center;
 }
@@ -44,8 +47,8 @@
   flex-shrink: 0;
   display: flex;
   justify-content: space-between;
-  margin: auto;
-  margin-top: 2rem;
+  /* margin: auto; */
+  margin: 2rem auto;
 }
 
 .contact-me {
@@ -85,84 +88,69 @@
   display: none;
 }
 
-/*
-
-.profile-name {
-  color: #fff;
-  font-family: Hammersmith One;
-  font-size: 65px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.contact-me .info a img {
-  width: 21.669px;
-  height: 16.259px;
-  flex-shrink: 0;
-}
-
-
-
-.Picture {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.Picture::after {
-  content: "";
-  width: 552px;
-  height: 552px;
-  flex-shrink: 0;
-  border-radius: 552px;
-  background: #232323;
-  position: absolute;
-  z-index: -1;
-}
-
-.Picture .saly {
-  width: 700px;
-  height: 700px;
-  flex-shrink: 0;
-} */
-
-/* @media screen and (max-width: 768px) {
-  .home {
-    grid-template-columns: 1fr;
+@media screen and (min-width: 768px) {
+  .profile-name {
+    font-size: 4.0625rem;
   }
-  .Picture {
-    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* padding-top: 3rem; */
   }
 
   .profile {
-    align-items: center;
-    justify-content: center;
+    text-align: left;
+    margin-top: 3rem;
   }
 
-  .profile-name {
-    text-align: center;
-  }
-
-  .profile-desc {
-    width: 100%;
-    text-align: center;
+  .profile-title {
+    margin: 1.5rem 0;
   }
 
   .tech-stack {
-    margin: auto;
-    flex-wrap: wrap;
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 555px) {
-  .profile-name {
-    font-size: 40px;
+    margin: 2rem 0;
   }
 
   .profile-desc {
-    font-size: 14px;
+    margin: 0;
+    text-align: left;
+    max-width: 572px;
   }
-} */
+
+  .contact-me {
+    margin: 7rem 0;
+    gap: 3rem;
+  }
+
+  .contact-me .info a span {
+    font-size: 1.4375rem;
+  }
+
+  .Picture {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Picture::after {
+    content: "";
+    width: 552px;
+    height: 552px;
+    border-radius: 50%;
+    background: #232323;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .Picture .saly {
+    width: 700px;
+    /* height: 778px; */
+    flex-shrink: 0;
+  }
+}
