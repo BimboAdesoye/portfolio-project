@@ -12,17 +12,44 @@
   --primary-color: #fff;
 }
 
+.lightmode {
+  --background-color: #fff;
+  --primary-color: #292727;
+}
+
 body {
   background-color: var(--background-color);
   min-height: 100vh;
+  color: var(--primary-color);
+  font-family: Hammersmith One;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+p {
+  margin-bottom: 1rem;
+}
+
+a,
+.link {
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
 .mycontainer {
   max-width: 1250px;
-  margin: auto;
+  padding: 0 1rem;
+  margin: 0 auto;
 }
 
-.lightmode {
-  --background-color: #fff;
-  --primary-color: #292727;
+img {
+  display: block;
+  max-width: 100%;
 }

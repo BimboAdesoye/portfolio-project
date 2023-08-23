@@ -38,7 +38,7 @@ const Home = () => {
             <div className="info">
               <a>
                 <img src={MailIcon} alt="" />
-                <p className="email">Email Me</p>
+                <span className="email">Email Me</span>
                 <img src={DownloadIcon} alt="" />
               </a>
               <a
@@ -47,7 +47,7 @@ const Home = () => {
                 rel="noreferrer"
               >
                 <img src={GithubIcon} alt="" />
-                <p className="github">Github</p>
+                <span className="github">Github</span>
                 <img src={DownloadIcon} alt="" />
               </a>
             </div>

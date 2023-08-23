@@ -20,54 +20,56 @@ const Navbar = ({ styleBody }) => {
     }
   }
   return (
-    <nav className="Navbar mycontainer">
-      <div className="logo">
-        <p>
-          <Link to={"/"} className="logo">
-            Abimbola.
-          </Link>
-        </p>
-      </div>
-      <div className="other">
-        <ul className={`${navClass} ${toggle ? "toggled" : null}`}>
-          <li>
-            <Link className="nav-link" to={"/Projects"}>
-              Projects
+    <div className="mycontainer">
+      <nav className="Navbar">
+        <div className="logo">
+          <p>
+            <Link to={"/"} className="logo">
+              Abimbola.
             </Link>
-          </li>
-          <li>
-            <Link className="nav-link">Download Resume</Link>
-          </li>
-          <li>
-            <a
-              href="https://abimbola.hashnode.dev/"
-              target="_blank"
-              rel="noreferrer"
-              className="nav-link"
-            >
-              Blog
-            </a>
-          </li>
-          <li>
-            <Link className="nav-link" to={"/Contact"}>
-              Contact
-            </Link>
-          </li>
-        </ul>
-        <div>
-          <img
-            onClick={handleLightMode}
-            src={lightMode ? MoonIcon : SunIcon}
-            alt=""
-          />
+          </p>
         </div>
-        <div className="hamburger" onClick={toggleNavbar}>
-          <div className="burger one"></div>
-          <div className="burger two"></div>
-          <div className="burger three"></div>
+        <div className="other">
+          <ul className={`${navClass} ${toggle ? "toggled" : null}`}>
+            <li>
+              <Link className="link" to={"/Projects"}>
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link className="link">Download Resume</Link>
+            </li>
+            <li>
+              <a
+                href="https://abimbola.hashnode.dev/"
+                target="_blank"
+                rel="noreferrer"
+                className="link"
+              >
+                Blog
+              </a>
+            </li>
+            <li>
+              <Link className="link" to={"/Contact"}>
+                Contact
+              </Link>
+            </li>
+          </ul>
+          <div>
+            <img
+              onClick={handleLightMode}
+              src={lightMode ? MoonIcon : SunIcon}
+              alt=""
+            />
+          </div>
+          <div className="hamburger" onClick={toggleNavbar}>
+            <div className="burger one"></div>
+            <div className="burger two"></div>
+            <div className="burger three"></div>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 };
 
