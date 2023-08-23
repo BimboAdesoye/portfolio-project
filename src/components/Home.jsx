@@ -1,4 +1,5 @@
 import "../styles/Home.css";
+import Navbar from "../components/Navbar";
 import Bootstrap from "../assets/Bootstrap.svg";
 import NodeJs from "../assets/NodeJs.svg";
 import HTML from "../assets/HTML.svg";
@@ -12,8 +13,12 @@ import GithubIcon from "../assets/GithubIcon.svg";
 import Saly from "../assets/Saly-13.svg";
 
 const Home = () => {
+  function styleBody() {
+    document.body.classList.add("lightmode");
+  }
   return (
     <div className="mycontainer">
+      <Navbar styleBody={styleBody} />
       <div className="home">
         <div className="profile">
           <p className="profile-title">Full Stack Developer</p>
@@ -36,7 +41,7 @@ const Home = () => {
           <div className="contact-me">
             <img src={ProfilePhoto} alt="" />
             <div className="info">
-              <a>
+              <a href="mailto:bimboadesoye44@gmail.com">
                 <img src={MailIcon} alt="" />
                 <span className="email">Email Me</span>
                 <img src={DownloadIcon} alt="" />

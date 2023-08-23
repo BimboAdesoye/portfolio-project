@@ -1,0 +1,141 @@
+.project-section {
+  height: 100vh;
+  position: relative;
+}
+
+.logo {
+  padding: 1.3rem 0;
+}
+
+.projects {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.project {
+  background: #404040;
+  padding: 1rem;
+  height: 260px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.project .stack {
+  color: #f16529;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.project .project-title {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  font-family: Hammersmith One;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  justify-content: center;
+  line-height: normal;
+  max-width: 207px;
+  min-height: 118px;
+  margin-top: 2rem;
+}
+
+.project .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.project .info a {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.project .info a span {
+  color: #b5b5b5;
+  font-family: Hammersmith One;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.developer {
+  display: none;
+}
+
+@media screen and (min-width: 786px) {
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .project-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .developer {
+    display: block;
+    height: 100%;
+  }
+
+  .developer .profile-name {
+    font-size: 56px;
+  }
+
+  .developer .profile-desc {
+    color: #b5b5b5;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px; /* 175% */
+  }
+
+  .developer .contact-me {
+    margin: 1rem 0;
+  }
+
+  .projects {
+    background: #2d2d2d;
+    gap: 1.5rem 1rem;
+    height: 100%;
+    overflow: auto;
+    scroll-behavior: smooth;
+    /* padding: 69px 121px 51px 39px; */
+    padding: 69px 0 51px 0;
+  }
+
+  .projects::-webkit-scrollbar {
+    display: none;
+  }
+
+  .profile-links {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0 6rem 0;
+    gap: 1.5rem;
+  }
+
+  .profile-links span {
+    display: flex;
+    color: #b5b5b5;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: 1rem;
+  }
+
+}
