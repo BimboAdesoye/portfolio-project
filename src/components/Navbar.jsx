@@ -23,11 +23,11 @@ const Navbar = ({ styleBody }) => {
     <div className="mycontainer">
       <nav className="Navbar">
         <div className="logo">
-          <p>
+          <span>
             <Link to={"/"} className="logo">
               Abimbola.
             </Link>
-          </p>
+          </span>
         </div>
         <div className="other">
           <ul className={`${navClass} ${toggle ? "toggled" : null}`}>
