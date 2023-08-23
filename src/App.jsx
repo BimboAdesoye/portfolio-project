@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        {/* <Navbar styleBody={styleBody}/> */}
+        <Navbar styleBody={styleBody}/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Projects" element={<Projects />} />
