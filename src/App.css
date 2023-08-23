@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #292727;
+  --primary-color: #fff;
+}
+
+body {
+  background-color: var(--background-color);
+  min-height: 100vh;
+}
+
+.mycontainer {
+  max-width: 1250px;
+  margin: auto;
+}
+
+.lightmode {
+  --background-color: #fff;
+  --primary-color: #292727;
+}
