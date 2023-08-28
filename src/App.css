@@ -10,6 +10,9 @@
 :root {
   --background-color: #292727;
   --primary-color: #fff;
+  --secondary-color: #b5b5b5;
+  --orange: #f16529;
+  --green: #83cd29;
 }
 
 .lightmode {
@@ -36,6 +39,51 @@ h1,
 p {
   margin-bottom: 1rem;
 }
+
+/* h1 {
+  font-size: 2.125rem;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 0.875rem;
+} */
+
+/* @media screen and (min-width: 768px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 45px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  h4 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+} */
+/* 
+h1,
+h2,
+h3,
+h4 {
+  font-family: Hammersmith One;
+}
+
+p {
+  font-family: Lato;
+} */
 
 a,
 .link {

@@ -55,13 +55,13 @@ const Navbar = ({ styleBody }) => {
               </Link>
             </li>
           </ul>
-          <div>
+          {/* <div>
             <img
               onClick={handleLightMode}
               src={lightMode ? MoonIcon : SunIcon}
               alt=""
             />
-          </div>
+          </div> */}
           <div className="hamburger" onClick={toggleNavbar}>
             <div className="burger one"></div>
             <div className="burger two"></div>

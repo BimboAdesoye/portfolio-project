@@ -10,6 +10,7 @@
 .projects {
   display: grid;
   gap: 1.5rem;
+  /* display: none; */
 }
 
 .project {
@@ -71,6 +72,62 @@
   display: none;
 }
 
+.contact-form {
+  /* display: none; */
+}
+
+.second-side {
+  padding: 3rem 1rem 2rem 1rem;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form form input {
+  min-height: 60.865px;
+  flex-shrink: 0;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  border-radius: 3px;
+  background: #535353;
+  border: none;
+  outline: none;
+  color: #cbcbcb;
+  font-family: Lato;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 1rem;
+}
+
+.contact-form form button {
+  background: #fff;
+  border-radius: 3px;
+  border: none;
+  color: #292727;
+  cursor: pointer;
+  font-family: Lato;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 58px;
+  outline: none;
+  width: 210px;
+}
+
+.focus {
+  color: #fff;
+}
+
 @media screen and (min-width: 786px) {
   .projects {
     display: grid;
@@ -106,14 +163,17 @@
     margin: 1rem 0;
   }
 
-  .projects {
+  .second-side {
     background: #2d2d2d;
-    gap: 1.5rem 1rem;
+    /* padding: 69px 0 51px 0; */
     height: 100%;
     overflow: auto;
     scroll-behavior: smooth;
-    /* padding: 69px 121px 51px 39px; */
-    padding: 69px 0 51px 0;
+    padding: 69px 121px 51px 39px;
+  }
+
+  .projects {
+    gap: 1.5rem 1rem;
   }
 
   .projects::-webkit-scrollbar {
@@ -136,6 +196,12 @@
     font-weight: 400;
     line-height: normal;
     gap: 1rem;
+    cursor: pointer;
   }
 
+  .profile-links span a {
+    display: flex;
+    gap: 1rem;
+    color: #b5b5b5;
+  }
 }

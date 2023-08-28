@@ -6,12 +6,23 @@ import ProfilePhoto from "../assets/ProfilePhoto.svg";
 import MailIcon from "../assets/MailIcon.svg";
 import { Link } from "react-router-dom";
 import LineIcon from "../assets/LineIcon.svg";
+import myResume from "../assets/wallicestenesResume.pdf"; 
+import { useState } from "react";
 
 const Projects = () => {
+  const [active, setActive] = useState(true);
+
+  function handleActive() {
+    setActive(false);
+  }
+
+  function handleActive2() {
+    setActive(true);
+  }
   return (
-    <div className="mycontainer">
+    <div className="">
       <div className="project-section">
-        <div className="developer">
+        <div className="developer mycontainer">
           <div className="logo">
             <span>
               <Link to={"/"} className="logo">
@@ -30,15 +41,20 @@ const Projects = () => {
               that leave a lasting impression.
             </p>
             <div className="profile-links">
-              <span>
+              <span onClick={handleActive2} className={active ? "focus" : null}>
                 01 <img src={LineIcon} alt="" />
                 Projects
               </span>
               <span>
-                02 <img src={LineIcon} alt="" />
-                Download Resume
+                <a href="../assets/wallicestenesResume.pdf" download={myResume}>
+                  02 <img src={LineIcon} alt="" />
+                  Download Resume
+                </a>
               </span>
-              <span>
+              <span
+                onClick={handleActive}
+                className={active ? "null" : "focus"}
+              >
                 03 <img src={LineIcon} alt="" />
                 Contact
               </span>
@@ -64,327 +80,354 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="projects">
-          {/* Project */}
-          <div className="project">
-            <div className="stack">
-              <span>JavaScript, React & Node</span>
+        <div className="second-side">
+          {active && (
+            <div className="projects mycontainer">
+              {/* Project */}
+              <div className="project">
+                <div className="stack">
+                  <span>JavaScript, React & Node</span>
+                </div>
+                <div className="project-title">
+                  PERFUMERY -
+                  <br />
+                  E-commerce Website
+                </div>
+                <div className="info">
+                  <a
+                    href="https://github.com/BimboAdesoye"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={GithubIcon} alt="" />
+                    <span className="email">Github</span>
+                    <img src={DownloadIcon} alt="" />
+                  </a>
+                  <a
+                    href="https://bimbos-perfumery-e-commerce.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={webIcon} alt="" />
+                    <span className="github">Website</span>
+                    <img src={DownloadIcon} alt="" />
+                  </a>
+                </div>
+              </div>
+              {/* Project */}
+              {/* Project */}
+              <div className="project">
+                <div className="stack">
+                  <span>JavaScript, React & Node</span>
+                </div>
+                <div className="project-title">
+                  PERFUMERY -
+                  <br />
+                  E-commerce Website
+                </div>
+                <div className="info">
+                  <a
+                    href="https://github.com/BimboAdesoye"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={GithubIcon} alt="" />
+                    <span className="email">Github</span>
+                    <img src={DownloadIcon} alt="" />
+                  </a>
+                  <a
+                    href="https://github.com/BimboAdesoye"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={webIcon} alt="" />
+                    <span className="github">Website</span>
+                    <img src={DownloadIcon} alt="" />
+                  </a>
+                </div>
+              </div>
+              {/* Project */}
+              {/* Project */}
+              <div className="project">
+                <div className="stack">
+                  <span>JavaScript, React & Node</span>
+                </div>
+                <div className="project-title">
+                  PERFUMERY -
+                  <br />
+                  E-commerce Website
+                </div>
+                <div className="info">
+                  <a
+                    href="https://github.com/BimboAdesoye"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={GithubIcon} alt="" />
+                    <span className="email">Github</span>
+                    <img src={DownloadIcon} alt="" />
+                  </a>
+                  <a
+                    href="https://github.com/BimboAdesoye"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={webIcon} alt="" />
+                    <span className="github">Website</span>
+                    <img src={DownloadIcon} alt="" />
+                  </a>
+                </div>
+              </div>
+              {/* Project */}
+              {/* Project */}
+              <div className="project">
+                <div className="stack">
+                  <span>JavaScript, React & Node</span>
+                </div>
+                <div className="project-title">
+                  PERFUMERY -
+                  <br />
+                  E-commerce Website
+                </div>
+                <div className="info">
+                  <a
+                    href="https://github.com/BimboAdesoye"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={GithubIcon} alt="" />
+                    <span className="email">Github</span>
+                    <img src={DownloadIcon} alt="" />
+                  </a>
+                  <a
+                    href="https://github.com/BimboAdesoye"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={webIcon} alt="" />
+                    <span className="github">Website</span>
+                    <img src={DownloadIcon} alt="" />
+                  </a>
+                </div>
+              </div>
+              {/* Project */}
+              {/* Project */}
+              <div className="project">
+                <div className="stack">
+                  <span>JavaScript, React & Node</span>
+                </div>
+                <div className="project-title">
+                  PERFUMERY -
+                  <br />
+                  E-commerce Website
+                </div>
+                <div className="info">
+                  <a
+                    href="https://github.com/BimboAdesoye"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={GithubIcon} alt="" />
+                    <span className="email">Github</span>
+                    <img src={DownloadIcon} alt="" />
+                  </a>
+                  <a
+                    href="https://github.com/BimboAdesoye"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={webIcon} alt="" />
+                    <span className="github">Website</span>
+                    <img src={DownloadIcon} alt="" />
+                  </a>
+                </div>
+              </div>
+              {/* Project */}
+              {/* Project */}
+              <div className="project">
+                <div className="stack">
+                  <span>JavaScript, React & Node</span>
+                </div>
+                <div className="project-title">
+                  PERFUMERY -
+                  <br />
+                  E-commerce Website
+                </div>
+                <div className="info">
+                  <a
+                    href="https://github.com/BimboAdesoye"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={GithubIcon} alt="" />
+                    <span className="email">Github</span>
+                    <img src={DownloadIcon} alt="" />
+                  </a>
+                  <a
+                    href="https://github.com/BimboAdesoye"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={webIcon} alt="" />
+                    <span className="github">Website</span>
+                    <img src={DownloadIcon} alt="" />
+                  </a>
+                </div>
+              </div>
+              {/* Project */}
+              {/* Project */}
+              <div className="project">
+                <div className="stack">
+                  <span>JavaScript, React & Node</span>
+                </div>
+                <div className="project-title">
+                  PERFUMERY -
+                  <br />
+                  E-commerce Website
+                </div>
+                <div className="info">
+                  <a
+                    href="https://github.com/BimboAdesoye"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={GithubIcon} alt="" />
+                    <span className="email">Github</span>
+                    <img src={DownloadIcon} alt="" />
+                  </a>
+                  <a
+                    href="https://github.com/BimboAdesoye"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={webIcon} alt="" />
+                    <span className="github">Website</span>
+                    <img src={DownloadIcon} alt="" />
+                  </a>
+                </div>
+              </div>
+              {/* Project */}
+              {/* Project */}
+              <div className="project">
+                <div className="stack">
+                  <span>JavaScript, React & Node</span>
+                </div>
+                <div className="project-title">
+                  PERFUMERY -
+                  <br />
+                  E-commerce Website
+                </div>
+                <div className="info">
+                  <a
+                    href="https://github.com/BimboAdesoye"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={GithubIcon} alt="" />
+                    <span className="email">Github</span>
+                    <img src={DownloadIcon} alt="" />
+                  </a>
+                  <a
+                    href="https://github.com/BimboAdesoye"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={webIcon} alt="" />
+                    <span className="github">Website</span>
+                    <img src={DownloadIcon} alt="" />
+                  </a>
+                </div>
+              </div>
+              {/* Project */}
+              {/* Project */}
+              <div className="project">
+                <div className="stack">
+                  <span>JavaScript, React & Node</span>
+                </div>
+                <div className="project-title">
+                  PERFUMERY -
+                  <br />
+                  E-commerce Website
+                </div>
+                <div className="info">
+                  <a
+                    href="https://github.com/BimboAdesoye"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={GithubIcon} alt="" />
+                    <span className="email">Github</span>
+                    <img src={DownloadIcon} alt="" />
+                  </a>
+                  <a
+                    href="https://github.com/BimboAdesoye"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={webIcon} alt="" />
+                    <span className="github">Website</span>
+                    <img src={DownloadIcon} alt="" />
+                  </a>
+                </div>
+              </div>
+              {/* Project */}
+              {/* Project */}
+              <div className="project">
+                <div className="stack">
+                  <span>JavaScript, React & Node</span>
+                </div>
+                <div className="project-title">
+                  PERFUMERY -
+                  <br />
+                  E-commerce Website
+                </div>
+                <div className="info">
+                  <a
+                    href="https://github.com/BimboAdesoye"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={GithubIcon} alt="" />
+                    <span className="email">Github</span>
+                    <img src={DownloadIcon} alt="" />
+                  </a>
+                  <a
+                    href="https://github.com/BimboAdesoye"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={webIcon} alt="" />
+                    <span className="github">Website</span>
+                    <img src={DownloadIcon} alt="" />
+                  </a>
+                </div>
+              </div>
+              {/* Project */}
             </div>
-            <div className="project-title">
-              PERFUMERY -
-              <br />
-              E-commerce Website
+          )}
+          {!active && (
+            <div className="contact-form mycontainer">
+              <h1>Send a Message</h1>
+              <form action="https://formspree.io/f/mjvqwpze" method="POST">
+                <input required type="text" placeholder="From:" name="text" />
+                <input
+                  required
+                  type="text"
+                  placeholder="Subject:"
+                  name="text"
+                />
+                <textarea
+                  required
+                  name="textarea"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Write message..."
+                ></textarea>
+                <button>Send Message</button>
+              </form>
             </div>
-            <div className="info">
-              <a
-                href="https://github.com/BimboAdesoye"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={GithubIcon} alt="" />
-                <span className="email">Github</span>
-                <img src={DownloadIcon} alt="" />
-              </a>
-              <a
-                href="https://bimbos-perfumery-e-commerce.netlify.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={webIcon} alt="" />
-                <span className="github">Website</span>
-                <img src={DownloadIcon} alt="" />
-              </a>
-            </div>
-          </div>
-          {/* Project */}
-          {/* Project */}
-          <div className="project">
-            <div className="stack">
-              <span>JavaScript, React & Node</span>
-            </div>
-            <div className="project-title">
-              PERFUMERY -
-              <br />
-              E-commerce Website
-            </div>
-            <div className="info">
-              <a
-                href="https://github.com/BimboAdesoye"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={GithubIcon} alt="" />
-                <span className="email">Github</span>
-                <img src={DownloadIcon} alt="" />
-              </a>
-              <a
-                href="https://github.com/BimboAdesoye"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={webIcon} alt="" />
-                <span className="github">Website</span>
-                <img src={DownloadIcon} alt="" />
-              </a>
-            </div>
-          </div>
-          {/* Project */}
-          {/* Project */}
-          <div className="project">
-            <div className="stack">
-              <span>JavaScript, React & Node</span>
-            </div>
-            <div className="project-title">
-              PERFUMERY -
-              <br />
-              E-commerce Website
-            </div>
-            <div className="info">
-              <a
-                href="https://github.com/BimboAdesoye"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={GithubIcon} alt="" />
-                <span className="email">Github</span>
-                <img src={DownloadIcon} alt="" />
-              </a>
-              <a
-                href="https://github.com/BimboAdesoye"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={webIcon} alt="" />
-                <span className="github">Website</span>
-                <img src={DownloadIcon} alt="" />
-              </a>
-            </div>
-          </div>
-          {/* Project */}
-          {/* Project */}
-          <div className="project">
-            <div className="stack">
-              <span>JavaScript, React & Node</span>
-            </div>
-            <div className="project-title">
-              PERFUMERY -
-              <br />
-              E-commerce Website
-            </div>
-            <div className="info">
-              <a
-                href="https://github.com/BimboAdesoye"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={GithubIcon} alt="" />
-                <span className="email">Github</span>
-                <img src={DownloadIcon} alt="" />
-              </a>
-              <a
-                href="https://github.com/BimboAdesoye"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={webIcon} alt="" />
-                <span className="github">Website</span>
-                <img src={DownloadIcon} alt="" />
-              </a>
-            </div>
-          </div>
-          {/* Project */}
-          {/* Project */}
-          <div className="project">
-            <div className="stack">
-              <span>JavaScript, React & Node</span>
-            </div>
-            <div className="project-title">
-              PERFUMERY -
-              <br />
-              E-commerce Website
-            </div>
-            <div className="info">
-              <a
-                href="https://github.com/BimboAdesoye"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={GithubIcon} alt="" />
-                <span className="email">Github</span>
-                <img src={DownloadIcon} alt="" />
-              </a>
-              <a
-                href="https://github.com/BimboAdesoye"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={webIcon} alt="" />
-                <span className="github">Website</span>
-                <img src={DownloadIcon} alt="" />
-              </a>
-            </div>
-          </div>
-          {/* Project */}
-          {/* Project */}
-          <div className="project">
-            <div className="stack">
-              <span>JavaScript, React & Node</span>
-            </div>
-            <div className="project-title">
-              PERFUMERY -
-              <br />
-              E-commerce Website
-            </div>
-            <div className="info">
-              <a
-                href="https://github.com/BimboAdesoye"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={GithubIcon} alt="" />
-                <span className="email">Github</span>
-                <img src={DownloadIcon} alt="" />
-              </a>
-              <a
-                href="https://github.com/BimboAdesoye"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={webIcon} alt="" />
-                <span className="github">Website</span>
-                <img src={DownloadIcon} alt="" />
-              </a>
-            </div>
-          </div>
-          {/* Project */}
-          {/* Project */}
-          <div className="project">
-            <div className="stack">
-              <span>JavaScript, React & Node</span>
-            </div>
-            <div className="project-title">
-              PERFUMERY -
-              <br />
-              E-commerce Website
-            </div>
-            <div className="info">
-              <a
-                href="https://github.com/BimboAdesoye"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={GithubIcon} alt="" />
-                <span className="email">Github</span>
-                <img src={DownloadIcon} alt="" />
-              </a>
-              <a
-                href="https://github.com/BimboAdesoye"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={webIcon} alt="" />
-                <span className="github">Website</span>
-                <img src={DownloadIcon} alt="" />
-              </a>
-            </div>
-          </div>
-          {/* Project */}
-          {/* Project */}
-          <div className="project">
-            <div className="stack">
-              <span>JavaScript, React & Node</span>
-            </div>
-            <div className="project-title">
-              PERFUMERY -
-              <br />
-              E-commerce Website
-            </div>
-            <div className="info">
-              <a
-                href="https://github.com/BimboAdesoye"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={GithubIcon} alt="" />
-                <span className="email">Github</span>
-                <img src={DownloadIcon} alt="" />
-              </a>
-              <a
-                href="https://github.com/BimboAdesoye"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={webIcon} alt="" />
-                <span className="github">Website</span>
-                <img src={DownloadIcon} alt="" />
-              </a>
-            </div>
-          </div>
-          {/* Project */}
-          {/* Project */}
-          <div className="project">
-            <div className="stack">
-              <span>JavaScript, React & Node</span>
-            </div>
-            <div className="project-title">
-              PERFUMERY -
-              <br />
-              E-commerce Website
-            </div>
-            <div className="info">
-              <a
-                href="https://github.com/BimboAdesoye"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={GithubIcon} alt="" />
-                <span className="email">Github</span>
-                <img src={DownloadIcon} alt="" />
-              </a>
-              <a
-                href="https://github.com/BimboAdesoye"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={webIcon} alt="" />
-                <span className="github">Website</span>
-                <img src={DownloadIcon} alt="" />
-              </a>
-            </div>
-          </div>
-          {/* Project */}
-          {/* Project */}
-          <div className="project">
-            <div className="stack">
-              <span>JavaScript, React & Node</span>
-            </div>
-            <div className="project-title">
-              PERFUMERY -
-              <br />
-              E-commerce Website
-            </div>
-            <div className="info">
-              <a
-                href="https://github.com/BimboAdesoye"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={GithubIcon} alt="" />
-                <span className="email">Github</span>
-                <img src={DownloadIcon} alt="" />
-              </a>
-              <a
-                href="https://github.com/BimboAdesoye"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={webIcon} alt="" />
-                <span className="github">Website</span>
-                <img src={DownloadIcon} alt="" />
-              </a>
-            </div>
-          </div>
-          {/* Project */}
+          )}
         </div>
       </div>
     </div>

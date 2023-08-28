@@ -6,7 +6,8 @@ import HTML from "../assets/HTML.svg";
 import JavaScript from "../assets/logos_javascript.svg";
 import React from "../assets/React.svg";
 import CSS from "../assets/CSS.svg";
-import ProfilePhoto from "../assets/ProfilePhoto.svg";
+// import ProfilePhoto from "../assets/ProfilePhoto.svg";
+import ProfilePhoto from "../assets/WhatsApp Image 2023-08-26 at 11.31.21.jpeg";
 import MailIcon from "../assets/MailIcon.svg";
 import DownloadIcon from "../assets/DownloadIcon.svg";
 import GithubIcon from "../assets/GithubIcon.svg";
@@ -39,7 +40,9 @@ const Home = () => {
             <img src={CSS} alt="" />
           </div>
           <div className="contact-me">
-            <img src={ProfilePhoto} alt="" />
+            {/* <div className="profile-photo"> */}
+              <img className="profile-photo" src={ProfilePhoto} alt="" />
+            {/* </div> */}
             <div className="info">
               <a href="mailto:bimboadesoye44@gmail.com">
                 <img src={MailIcon} alt="" />
