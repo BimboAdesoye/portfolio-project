@@ -1,24 +1,18 @@
 import "../styles/Navbar.css";
 import { Link } from "react-router-dom";
-import MoonIcon from "../assets/icon-moon.svg";
-import SunIcon from "../assets/icon-sun.svg";
+import myResume from "../assets/wallicestenesResume.pdf";
+
 import { useState } from "react";
 
-const Navbar = ({ styleBody }) => {
-  const [lightMode, setLightMode] = useState(false);
+const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const navClass = "nav-list";
 
   function toggleNavbar() {
     setToggle(!toggle);
+    console.log("yes");
   }
 
-  function handleLightMode() {
-    setLightMode(!lightMode);
-    if (toggle) {
-      styleBody();
-    }
-  }
   return (
     <div className="mycontainer">
       <nav className="Navbar">
@@ -37,7 +31,9 @@ const Navbar = ({ styleBody }) => {
               </Link>
             </li>
             <li>
-              <Link className="link">Download Resume</Link>
+              <a href="../assets/wallicestenesResume.pdf" download={myResume}>
+                Download Resume
+              </a>
             </li>
             <li>
               <a
@@ -49,19 +45,7 @@ const Navbar = ({ styleBody }) => {
                 Blog
               </a>
             </li>
-            <li>
-              <Link className="link" to={"/Contact"}>
-                Contact
-              </Link>
-            </li>
           </ul>
-          {/* <div>
-            <img
-              onClick={handleLightMode}
-              src={lightMode ? MoonIcon : SunIcon}
-              alt=""
-            />
-          </div> */}
           <div className="hamburger" onClick={toggleNavbar}>
             <div className="burger one"></div>
             <div className="burger two"></div>

@@ -36,7 +36,7 @@
   flex-direction: column;
   flex-shrink: 0;
   font-family: Hammersmith One;
-  font-size: 30px;
+  font-size: 29px;
   font-style: normal;
   font-weight: 400;
   justify-content: center;
@@ -55,26 +55,27 @@
 
 .project .info a {
   display: flex;
-  gap: 8px;
+  gap: 4px;
   align-items: center;
 }
 
 .project .info a span {
   color: #b5b5b5;
   font-family: Hammersmith One;
-  font-size: 20px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.project .info a img {
+  width: 15px;
 }
 
 .developer {
   display: none;
 }
 
-.contact-form {
-  /* display: none; */
-}
 
 .second-side {
   padding: 3rem 1rem 2rem 1rem;
@@ -169,14 +170,14 @@
     height: 100%;
     overflow: auto;
     scroll-behavior: smooth;
-    padding: 69px 121px 51px 39px;
+    padding: 69px 100px 51px 39px;
   }
 
   .projects {
     gap: 1.5rem 1rem;
   }
 
-  .projects::-webkit-scrollbar {
+  .second-side::-webkit-scrollbar {
     display: none;
   }
 
@@ -203,5 +204,9 @@
     display: flex;
     gap: 1rem;
     color: #b5b5b5;
+  }
+
+  .logo.second-side-logo {
+    display: none;
   }
 }

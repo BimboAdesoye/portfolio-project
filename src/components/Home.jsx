@@ -6,7 +6,6 @@ import HTML from "../assets/HTML.svg";
 import JavaScript from "../assets/logos_javascript.svg";
 import React from "../assets/React.svg";
 import CSS from "../assets/CSS.svg";
-// import ProfilePhoto from "../assets/ProfilePhoto.svg";
 import ProfilePhoto from "../assets/WhatsApp Image 2023-08-26 at 11.31.21.jpeg";
 import MailIcon from "../assets/MailIcon.svg";
 import DownloadIcon from "../assets/DownloadIcon.svg";
@@ -14,12 +13,9 @@ import GithubIcon from "../assets/GithubIcon.svg";
 import Saly from "../assets/Saly-13.svg";
 
 const Home = () => {
-  function styleBody() {
-    document.body.classList.add("lightmode");
-  }
   return (
     <div className="mycontainer">
-      <Navbar styleBody={styleBody} />
+      <Navbar />
       <div className="home">
         <div className="profile">
           <p className="profile-title">Full Stack Developer</p>
@@ -40,9 +36,7 @@ const Home = () => {
             <img src={CSS} alt="" />
           </div>
           <div className="contact-me">
-            {/* <div className="profile-photo"> */}
-              <img className="profile-photo" src={ProfilePhoto} alt="" />
-            {/* </div> */}
+            <img className="profile-photo" src={ProfilePhoto} alt="" />
             <div className="info">
               <a href="mailto:bimboadesoye44@gmail.com">
                 <img src={MailIcon} alt="" />
@@ -62,7 +56,6 @@ const Home = () => {
           </div>
         </div>
         <div className="Picture">
-          {/* <div className="ellipse"></div> */}
           <img className="saly" src={Saly} alt="" />
         </div>
       </div>

@@ -6,7 +6,7 @@ import ProfilePhoto from "../assets/ProfilePhoto.svg";
 import MailIcon from "../assets/MailIcon.svg";
 import { Link } from "react-router-dom";
 import LineIcon from "../assets/LineIcon.svg";
-import myResume from "../assets/wallicestenesResume.pdf"; 
+import myResume from "../assets/wallicestenesResume.pdf";
 import { useState } from "react";
 
 const Projects = () => {
@@ -81,12 +81,19 @@ const Projects = () => {
           </div>
         </div>
         <div className="second-side">
+          <div className="logo second-side-logo">
+            <span>
+              <Link to={"/"} className="logo">
+                Abimbola.
+              </Link>
+            </span>
+          </div>
           {active && (
             <div className="projects mycontainer">
               {/* Project */}
               <div className="project">
                 <div className="stack">
-                  <span>JavaScript, React & Node</span>
+                  <span>React & Node</span>
                 </div>
                 <div className="project-title">
                   PERFUMERY -
@@ -115,19 +122,18 @@ const Projects = () => {
                 </div>
               </div>
               {/* Project */}
-              {/* Project */}
               <div className="project">
                 <div className="stack">
-                  <span>JavaScript, React & Node</span>
+                  <span>React</span>
                 </div>
                 <div className="project-title">
-                  PERFUMERY -
+                  MOVIEBOX -
                   <br />
-                  E-commerce Website
+                  Movie Discovery App
                 </div>
                 <div className="info">
                   <a
-                    href="https://github.com/BimboAdesoye"
+                    href="https://github.com/BimboAdesoye/HNG-TASK2"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -136,7 +142,7 @@ const Projects = () => {
                     <img src={DownloadIcon} alt="" />
                   </a>
                   <a
-                    href="https://github.com/BimboAdesoye"
+                    href="https://hngtask2-movie-app.netlify.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -147,19 +153,18 @@ const Projects = () => {
                 </div>
               </div>
               {/* Project */}
-              {/* Project */}
               <div className="project">
                 <div className="stack">
-                  <span>JavaScript, React & Node</span>
+                  <span>REACT</span>
                 </div>
                 <div className="project-title">
-                  PERFUMERY -
+                  TRADEXPRESS -
                   <br />
-                  E-commerce Website
+                  Cryptocurrency Website
                 </div>
                 <div className="info">
                   <a
-                    href="https://github.com/BimboAdesoye"
+                    href="https://github.com/BimboAdesoye/cryptocurrency"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -168,7 +173,7 @@ const Projects = () => {
                     <img src={DownloadIcon} alt="" />
                   </a>
                   <a
-                    href="https://github.com/BimboAdesoye"
+                    href="https://crypto-site-by-bimbo.netlify.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -179,19 +184,18 @@ const Projects = () => {
                 </div>
               </div>
               {/* Project */}
-              {/* Project */}
               <div className="project">
                 <div className="stack">
-                  <span>JavaScript, React & Node</span>
+                  <span>React & Firebase</span>
                 </div>
                 <div className="project-title">
-                  PERFUMERY -
+                  GALLERIA -
                   <br />
-                  E-commerce Website
+                  Image Gallery App
                 </div>
                 <div className="info">
                   <a
-                    href="https://github.com/BimboAdesoye"
+                    href="https://github.com/BimboAdesoye/HNGTASK-3"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -200,7 +204,7 @@ const Projects = () => {
                     <img src={DownloadIcon} alt="" />
                   </a>
                   <a
-                    href="https://github.com/BimboAdesoye"
+                    href="https://hngtask3-gallery-app.netlify.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -211,19 +215,18 @@ const Projects = () => {
                 </div>
               </div>
               {/* Project */}
-              {/* Project */}
               <div className="project">
                 <div className="stack">
-                  <span>JavaScript, React & Node</span>
+                  <span>React & Node</span>
                 </div>
                 <div className="project-title">
-                  PERFUMERY -
+                  MYSTORE -
                   <br />
                   E-commerce Website
                 </div>
                 <div className="info">
                   <a
-                    href="https://github.com/BimboAdesoye"
+                    href="https://github.com/BimboAdesoye/react_e-commerce"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -232,7 +235,7 @@ const Projects = () => {
                     <img src={DownloadIcon} alt="" />
                   </a>
                   <a
-                    href="https://github.com/BimboAdesoye"
+                    href="https://bimbos-react-ecommerce-site.netlify.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -243,19 +246,18 @@ const Projects = () => {
                 </div>
               </div>
               {/* Project */}
-              {/* Project */}
               <div className="project">
                 <div className="stack">
-                  <span>JavaScript, React & Node</span>
+                  <span>HTML & CSS</span>
                 </div>
                 <div className="project-title">
-                  PERFUMERY -
+                  TEKSTUDI0 -
                   <br />
-                  E-commerce Website
+                  Techstudio website clone
                 </div>
                 <div className="info">
                   <a
-                    href="https://github.com/BimboAdesoye"
+                    href="https://github.com/BimboAdesoye/Techstudioacademywebsite-clone"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -264,7 +266,7 @@ const Projects = () => {
                     <img src={DownloadIcon} alt="" />
                   </a>
                   <a
-                    href="https://github.com/BimboAdesoye"
+                    href="https://techstudio-clone-by-abimbola.netlify.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -275,19 +277,18 @@ const Projects = () => {
                 </div>
               </div>
               {/* Project */}
-              {/* Project */}
               <div className="project">
                 <div className="stack">
-                  <span>JavaScript, React & Node</span>
+                  <span>HTML, CSS & Bootstrap</span>
                 </div>
                 <div className="project-title">
-                  PERFUMERY -
+                  NATURE-FX -
                   <br />
-                  E-commerce Website
+                  Big Cat Website
                 </div>
                 <div className="info">
                   <a
-                    href="https://github.com/BimboAdesoye"
+                    href="https://github.com/BimboAdesoye/Bimbo-s-bootstrap-website"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -296,7 +297,7 @@ const Projects = () => {
                     <img src={DownloadIcon} alt="" />
                   </a>
                   <a
-                    href="https://github.com/BimboAdesoye"
+                    href="https://bimbos-big-cat-website.netlify.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -307,19 +308,18 @@ const Projects = () => {
                 </div>
               </div>
               {/* Project */}
-              {/* Project */}
               <div className="project">
                 <div className="stack">
-                  <span>JavaScript, React & Node</span>
+                  <span>HMTL & CSS</span>
                 </div>
                 <div className="project-title">
-                  PERFUMERY -
+                  HUDDLE -
                   <br />
-                  E-commerce Website
+                  Simple Landing Page
                 </div>
                 <div className="info">
                   <a
-                    href="https://github.com/BimboAdesoye"
+                    href="https://github.com/BimboAdesoye/Bimbo-s-huddle"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -328,7 +328,7 @@ const Projects = () => {
                     <img src={DownloadIcon} alt="" />
                   </a>
                   <a
-                    href="https://github.com/BimboAdesoye"
+                    href="https://huddle-by-bimbo.netlify.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -339,19 +339,18 @@ const Projects = () => {
                 </div>
               </div>
               {/* Project */}
-              {/* Project */}
               <div className="project">
                 <div className="stack">
-                  <span>JavaScript, React & Node</span>
+                  <span>React</span>
                 </div>
                 <div className="project-title">
-                  PERFUMERY -
+                  BOOKMARK -
                   <br />
-                  E-commerce Website
+                  Simple Landing Page
                 </div>
                 <div className="info">
                   <a
-                    href="https://github.com/BimboAdesoye"
+                    href="https://github.com/BimboAdesoye/react-landing-page"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -360,7 +359,7 @@ const Projects = () => {
                     <img src={DownloadIcon} alt="" />
                   </a>
                   <a
-                    href="https://github.com/BimboAdesoye"
+                    href="https://bimbos-react-landingpage.netlify.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -371,19 +370,18 @@ const Projects = () => {
                 </div>
               </div>
               {/* Project */}
-              {/* Project */}
               <div className="project">
                 <div className="stack">
-                  <span>JavaScript, React & Node</span>
+                  <span>HTML, CSS & JavaScript</span>
                 </div>
                 <div className="project-title">
-                  PERFUMERY -
+                  NOTIFY -
                   <br />
-                  E-commerce Website
+                  Notifications Page
                 </div>
                 <div className="info">
                   <a
-                    href="https://github.com/BimboAdesoye"
+                    href="https://github.com/BimboAdesoye/notifications_page"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -392,7 +390,7 @@ const Projects = () => {
                     <img src={DownloadIcon} alt="" />
                   </a>
                   <a
-                    href="https://github.com/BimboAdesoye"
+                    href="https://bimbos-notifications-page.netlify.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
